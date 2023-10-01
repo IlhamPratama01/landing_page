@@ -16,6 +16,7 @@
           <li><a href="#">Menu</a></li>
           <li><a href="#">What's New</a></li>
           <li><a href="#">Contact</a></li>
+          <li><a href="#">Log in</a></li>
         </ul>
       </header>
       <div class="content">
@@ -27,7 +28,7 @@
             nesciunt ullam sequi dolor eligendi aperiam ut fuga magnam beatae in
             exercitationem. Qui, obcaecati necessitatibus.
           </p>
-          <a href="#">Learn More</a>
+          <a href="#" id="buton">Learn More</a>
         </div>
         <div class="imgBox">
           <img src="img/img1.png" class="starbucks" />
@@ -37,19 +38,19 @@
         <li>
           <img
             src="img/thumb1.png"
-            onclick="imgSlider('img/img1.png');change('#017143');text('#017143')"
+            onmouseover="imgSlider('img/img1.png');change('#017143');text('#017143');butom('#017143')"
           />
         </li>
         <li>
           <img
             src="img/thumb2.png"
-            onclick="imgSlider('img/img2.png');change('#eb7495');text('#eb7495')"
+            onmouseover="imgSlider('img/img2.png');change('#eb7495');text('#eb7495');butom('#eb7495')"
           />
         </li>
         <li>
           <img
             src="img/thumb3.png"
-            onclick="imgSlider('img/img3.png');change('#d752b1');text('#d752b1')"
+            onmouseover="imgSlider('img/img3.png');change('#d752b1');text('#d752b1');butom('#d752b1')"
           />
         </li>
       </ul>
@@ -78,6 +79,11 @@
       function text(col) {
         const text = document.getElementById("text");
         text.style.color = col;
+      }
+
+      function butom(wal) {
+        const btn = document.getElementById("buton");
+        btn.style.background = wal;
       }
     </script>
   </body>
